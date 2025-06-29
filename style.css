@@ -1,0 +1,37 @@
+.main {
+    max-width: 1000px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+
+    
+}
+
+.name{
+    font-size: 3em;
+}
+.cool{
+    background: linear-gradient(
+    to right,
+    red, orange, green
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#image {
+    float: right;
+
+    border-radius: 25px;
+    width: 275px;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+.paragraph{
+    font-size: 1.2 em;
+    font-family: Helvetica;
+    line-height: 25px;
+}

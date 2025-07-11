@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
-    <link rel="stylesheet" href = "style.css"> 
+    <title>Dice Roller Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label id="countLabel">0</label><br>
-    <div id="btncontainer">
-        <button id="decreaseBtn" class = "buttons">decrease</button>
-        <button id="increaseBtn" class = "buttons">increase</button>
-        <button id="resetBtn" class = "buttons">reset</button>
+
+    <div id="container">
+        <h1>DiceRoller</h1>
+        <label># of dice:</label>
+        <input type="number" value="1" min="1">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
     </div>
-    <p>CHANGE I MADE</p>
-    <p>CHANGE I MADE</p>
-<<<<<<< HEAD
-    <p>main switch hahahahahahahahah</p>
-=======
-    <p>CHANGE I MADE</p>
-    <p>CHANGE I MADE</p>
->>>>>>> UpdateText
-    <script src ="index.js"></script>
+
+    <script src="index.js"></script>
+    
 </body>
 </html>

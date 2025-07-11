@@ -1,20 +1,9 @@
-const decreaseBtn = document.getElementById("decreaseBtn");
-const increaseBtn = document.getElementById("increaseBtn");
-const resetBtn = document.getElementById("resetBtn");
-const countLabel = document.getElementById("countLabel");
-let count = 0;
+const food1 = "hamburger";
+const food2 = "sushi";
+const food3 = "pizza";
 
-increaseBtn.onclick = function(){
-    count++;
-    countLabel.textContent = count;
+function openFridge(...foods){
+    console.log(...foods);
 }
 
-decreaseBtn.onclick = function(){
-    count--;
-    countLabel.textContent = count;
-}
-
-resetBtn.onclick = function(){
-    count = 0;
-    countLabel.textContent = count;
-}
+openFridge(food1, food2, food3)

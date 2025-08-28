@@ -1,0 +1,20 @@
+:root {
+  /* light theme (default) */
+  --primary-color: #27272a;
+	--secondary-color: #65656d;
+	--tertiary-color: #acacb4;
+	--quaternary-color: #e4e4e7;
+	--link-color: #14b8a6;
+
+  --primary-font: "Heebo", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+}
+
+.dark-theme {
+  /* dark theme overrides */
+  --primary-color: #27272a;
+  --secondary-color: #65656d;
+  --tertiary-color: #acacb4;
+  --quaternary-color: #e4e4e7;
+  --link-color: #06b6d4;
+}

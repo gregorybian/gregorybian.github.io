@@ -1,0 +1,23 @@
+@import "../../../data/styles.css";
+
+.navbar-container{
+    border: 1px solid rgba(225, 225, 225, 0.128);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px ;
+    max-width: 500px;
+    min-height: 40px;
+    margin: auto;
+    
+}
+
+.navbar-links{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    list-style-type: none;
+    font-size: large;
+}
+
+.navbar-link{
+    margin: 20px;
+}

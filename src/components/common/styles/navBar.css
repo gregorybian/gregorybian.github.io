@@ -1,13 +1,16 @@
 @import "../../../data/styles.css";
 
 .navbar-container{
-    border: 1px solid rgba(225, 225, 225, 0.128);
+    padding: 40px;
+}
+.navbar{
+    border: 1px solid var(--quaternary-color);
     border-radius: 20px;
-    box-shadow: 1px 1px 5px ;
-    max-width: 500px;
+    box-shadow: 2px 2px 10px var(--quaternary-color);
+    max-width: 390px;
     min-height: 40px;
     margin: auto;
-    
+    background-color: var(--quinternary-color);
 }
 
 .navbar-links{
@@ -15,9 +18,29 @@
     margin: auto;
     gap: 20px;
     list-style-type: none;
-    font-size: large;
+    justify-content: space-between;
+    margin-right: 45px;
+    margin-top: 7px;
+    
 }
 
 .navbar-link{
-    margin: 20px;
+    text-decoration: none;
+	color: var(--primary-color);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 90%;
+}
+
+.navbar-link:hover{
+	color: var(--link-color);
+    transition: color 0.2s ease-in;
+}
+
+.navbar-active{
+    text-decoration: none;
+	color: var(--link-color);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 90%;
 }

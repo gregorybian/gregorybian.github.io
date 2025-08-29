@@ -4,14 +4,22 @@ import "./styles/project.css";
 
 
 export default function Project(props){
-	const { logo, title, description, linkText, link } = props;
+	const { logo, logo1, title, description, linkText, link } = props;
+	
+	function Image(src){
+		if(!src){
+			return null;
+		}
+		return <img src={src} alt="logo"/>;
+	}
 
 	return (
 		<React.Fragment>
 			<div className="project">
 				<div className="project-container">
 					<div className="project-logo">
-						<img src={logo} alt="logo" />
+						{Image(logo)}
+						{Image(logo1)}
 					</div>
 					<div className="project-title">{title}</div>
 					<div className="project-description">{description}</div>

@@ -16,21 +16,25 @@ const INFO = {
 		title: "Hey There! I'm",
 		highlight: "Gregory Bian!",
 		description:
-			"I am a second year Computer Engineering Student at UBC. My current area of passion is in Data Analysis and Machine Learning. However, I have a diverse skill set and am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a second year Computer Engineering Student at UBC. My current area of passion is in Data Analysis and Machine Learning. However, I have a diverse skill set as shown in my digital toolbox and am always looking for new challenges and opportunities to grow as a developer.",
 	},
 
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+	toolbox: {
+		html: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png",
+		css: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.png",
+		javascript: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.png",
+		java: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png",
+		c: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png",
+		python: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png",
+		react: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
+		typescript: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png",
+		nodejs: "https://cdn.freebiesupply.com/logos/large/2x/nodejs-icon-logo-png-transparent.png",
+		nextjs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIy-mzDNwEgiWKpwsy_8CK9KSr6GEnCcpgQ&s",
+		tailwing: "https://images.seeklogo.com/logo-png/35/1/tailwind-css-logo-png_seeklogo-354675.png"
+
 	},
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
-
+	
 	projects: [
 		{
 			title: "Project 1",
@@ -46,6 +50,7 @@ const INFO = {
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			logo1: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -55,6 +60,7 @@ const INFO = {
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			logo1: null,
 			linkText: "View Project",
 			link: "https://github.com",
 		},

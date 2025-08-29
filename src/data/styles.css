@@ -1,9 +1,12 @@
+
+
 :root {
   /* light theme (default) */
   --primary-color: #27272a;
 	--secondary-color: #65656d;
 	--tertiary-color: #acacb4;
 	--quaternary-color: #e4e4e7;
+  --quinternary-color: #ffffff;
 	--link-color: #14b8a6;
 
   --primary-font: "Heebo", sans-serif;

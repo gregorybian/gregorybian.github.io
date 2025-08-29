@@ -1,0 +1,42 @@
+@import "../../../data/styles.css";
+
+
+.toolbox-container{
+    max-width: 25vw;
+    border: 1px solid none;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px var(--secondary-color);
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color:  var(--quaternary-color);
+}
+
+.toolbox-image-container{
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+
+}
+.toolbox-image{
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbox-title{
+    margin: 0;
+    padding-top: 15px;
+    color: var(--primary-color)
+}
+.toolbox-subtitle{
+    padding-top: 10px;
+    margin: 0;
+    color: var(--secondary-color)
+}
+
+.toolbox-line{
+    border-bottom: 1px solid var(--quaternary-color);
+    margin: 0;
+    margin-bottom: 10px
+}

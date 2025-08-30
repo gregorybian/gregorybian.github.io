@@ -1,0 +1,34 @@
+@import "../../../data/styles.css";
+
+.image-container {
+  position: relative;
+  display: inline-block; /* shrink-wraps around image */
+}
+
+.toolbox-image {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.toolbox-image:hover{
+    transform: scale(1.1);
+}
+
+.hover-text {
+  position: absolute;
+  font-family: var(--primary-font);
+  bottom: 130%; /* places it above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--quinternary-color);
+  color: var(--secondary-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* prevent blocking hover */
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}

@@ -1,0 +1,23 @@
+@import "../../data/styles.css";
+
+.experience-page-container {
+	padding-top: 100px;
+}
+
+.experience-page-header{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 3rem;
+}
+
+.experience-page-title {
+	width: 85% !important;
+    display: inline;
+}
+
+.experience-page-subtitle {
+	width: 85% !important;
+}
+
+

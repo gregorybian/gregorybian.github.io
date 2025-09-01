@@ -1,0 +1,40 @@
+.footer {
+    padding: 1.5rem;
+    margin-top: auto;
+    width: 100%;
+    padding-top: 150px
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 200px;
+}
+
+.copyright {
+    color: var(--text-secondary, #6c757d);
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 200px;
+}
+
+
+
+

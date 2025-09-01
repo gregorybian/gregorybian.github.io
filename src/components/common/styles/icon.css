@@ -1,0 +1,26 @@
+.social-links {
+	display: flex;
+	flex-wrap: wrap;
+    padding-top: 20px
+}
+
+.social-link {
+	color: var(--text-secondary, #6c757d);
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.2s ease;
+	padding: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	transition: all 0.2s ease;
+}
+
+.social-link:hover {
+	color: var(--accent-color, #007bff);
+	background-color: var(--background-hover, rgba(0, 123, 255, 0.1));
+	transform: translateY(-2px);
+}

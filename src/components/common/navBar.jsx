@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ThemeToggle from "./themeToggle"
 import "./styles/navBar.css"
 
 
@@ -12,7 +13,9 @@ export default function NavBar(props){
                     <li><Link to="/experience" className={props.active == "experiencePage" ? "navbar-active" :"navbar-link"}>Experience</Link></li>
                     <li><Link to="/contact" className={props.active == "contactPage" ? "navbar-active" :"navbar-link"}>Contact</Link></li>
                 </ul>
+                
             </nav>
+            <ThemeToggle />
         </div>
     )
 }

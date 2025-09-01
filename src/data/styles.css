@@ -7,7 +7,7 @@
 	--tertiary-color: #acacb4;
 	--quaternary-color: #e4e4e7;
   --quinternary-color: #ffffff;
-	--link-color: #14b8a6;
+	--link-color: #1463b8;
 
   --primary-font: "Heebo", sans-serif;
   --secondary-font: "Roboto", sans-serif;
@@ -15,9 +15,10 @@
 
 .dark-theme {
   /* dark theme overrides */
-  --primary-color: #27272a;
-  --secondary-color: #65656d;
+  --primary-color: #ffffff;
+  --secondary-color: #e4e4e7;
   --tertiary-color: #acacb4;
-  --quaternary-color: #e4e4e7;
+  --quaternary-color: #3f3f46;
+  --quinternary-color: #18181b;
   --link-color: #06b6d4;
 }

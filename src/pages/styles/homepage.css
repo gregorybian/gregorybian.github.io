@@ -2,7 +2,7 @@
 
 
 .homepage-container{
-    padding-top: 25px;
+    padding-top: 100px;
 
 }
 
@@ -25,7 +25,26 @@
 .homepage-highlight {
     display: inline;
     width: 85% !important;
-    color: pink;
+    font-family: var(--secondary-font) !important;
+    
+   
+}
+
+.homepage-highlight-projects{
+    display: inline;
+    width: 85% !important;
+    font-size: 65px !important;
+    
+}
+
+.homepage-projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.homepage-projects-header{
+    display: inline;
 }
 
 .homepage-subtitle {
@@ -36,4 +55,10 @@
     display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.homepage-line{
+    border-top: 1px solid var(--tertiary-color);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }

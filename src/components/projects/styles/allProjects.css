@@ -11,8 +11,9 @@
 .all-projects-project {
 	width: calc(100% / 3);
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 0px;
 	overflow: hidden;
+	padding-
 }
 
 @media (max-width: 600px) {

@@ -1,20 +1,37 @@
 @import "./data/styles.css";
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');
+
+
 
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #f1f1f1;
+	background-color: var(--quaternary-color);
+	transition: background-color 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #383636;
+	background-color: var(--tertiary-color);
 	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: rgb(0, 0, 0);
+	background-color: var(--primary-color);
+}
+
+.dark-theme ::-webkit-scrollbar-track {
+	background-color: var(--quaternary-color);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+	background-color: var(--tertiary-color);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+	background-color: var(--primary-color);
 }
 
 .page-content {
@@ -22,16 +39,21 @@
 	justify-content: center;
 	align-items: center;
 	width: 85vw;
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 	position: relative;
 	border: 0 solid;
-	background-color: white;
+	background-color: var(--quinternary-color);
+	transition: background-color 0.3s ease;
+	display: flex;
+	flex-direction: column;
 }
 
 
 .content-wrapper {
 	max-width: 70vw;
 	margin: 0 auto;
+	flex: 1;
 }
 
 .title {
@@ -45,10 +67,23 @@
 .subtitle {
 	padding-top: 10px;
 	color: var(--secondary-color);
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 28px;
 	width: 70%;
 	margin-top: 25px;
+}
+.highlight {
+	background: linear-gradient(to right,#9257c2, #6e57c2, #2196f3, #26c6da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+	font-family: "Asimovian", var(--secondary-font);
+	font-size: 55px;
+	font-weight: 600;
+	width: 70%;
+	font-style: italic;
+	line-height: ;
 }
 
 .page-footer {

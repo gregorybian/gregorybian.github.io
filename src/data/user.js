@@ -18,14 +18,13 @@ const INFO = {
 	main: {
 		title: "Reactfolio by Gregory",
 		name: "Gregory B.",
-		email: "gregorybian100@gmail.com",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
+		github: "https://github.com/gregorybian",
+		linkedin: "https://www.linkedin.com/in/gregorybian/",
+		instagram: "https://instagram.com/gregorybian",
+		email: "gregorybian100@gmail.com",
 	},
 
 	homepage: {
@@ -33,6 +32,8 @@ const INFO = {
 		highlight: "Gregory Bian!",
 		description:
 			"I am a second year Computer Engineering Student at UBC. My current area of passion is in Data Analysis and Machine Learning. However, I have a diverse skill set as shown in my digital toolbox and am always looking for new challenges and opportunities to grow as a developer.",
+		description2: 
+			"Outside of academics, I enjoy playing sports. Whether that be working out, playing hockey, or play ultimate frisbee, I welcome competition and pushing myself to improve. You can find my contact details below."
 	},
 
 	webdev:[
@@ -59,12 +60,42 @@ const INFO = {
 
 	hardware:[
 		{key: 1, name: "Arduino", url: Arduino},
-		{key: 1, name: "Raspberry Pi", url: RaspberryPi},
-		{key: 1, name: "Circuit Design", url: CircuitDesign},
-		{key: 1, name: "Soldering", url: Soldering},
-		{key: 1, name: "AutoCAD", url: AutoCAD},
-		{key: 1, name: "Oscilloscope", url: Oscilloscope},
+		{key: 2, name: "Raspberry Pi", url: RaspberryPi},
+		{key: 3, name: "Circuit Design", url: CircuitDesign},
+		{key: 4, name: "Soldering", url: Soldering},
+		{key: 5, name: "AutoCAD", url: AutoCAD},
+		{key: 6, name: "Oscilloscope", url: Oscilloscope},
 
+	],
+
+	experiences: [
+		{
+			title: "Software Engineering Intern",
+			company: "Tech Company Inc.",
+			location: "Vancouver, BC",
+			duration: "May 2024 - Aug 2024",
+			description: "Developed full-stack web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+			technologies: ["React", "Node.js", "MongoDB", "Git"],
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.png"
+		},
+		{
+			title: "Data Analysis Research Assistant",
+			company: "UBC Engineering",
+			location: "Vancouver, BC",
+			duration: "Jan 2024 - Present",
+			description: "Conducting research on machine learning algorithms for data analysis. Implementing and testing various ML models using Python and related libraries.",
+			technologies: ["Python", "NumPy", "Pandas", "Matplotlib", "Scikit-learn"],
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png"
+		},
+		{
+			title: "Hardware Design Project Lead",
+			company: "UBC Capstone Project",
+			location: "Vancouver, BC",
+			duration: "Sep 2023 - Apr 2024",
+			description: "Led a team of 4 students in designing and prototyping an IoT device using Arduino and Raspberry Pi. Managed project timeline and deliverables.",
+			technologies: ["Arduino", "Raspberry Pi", "C++", "Python", "Circuit Design"],
+			logo: Arduino
+		}
 	],
 
 	

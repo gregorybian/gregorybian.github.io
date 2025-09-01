@@ -1,0 +1,25 @@
+@import "../../data/styles.css";
+
+.projects-page-container {
+	padding-top: 100px;
+}
+
+.projects-page-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 3rem;
+}
+
+.projects-page-title {
+	width: 85% !important;
+    display: inline;
+}
+
+.projects-page-subtitle {
+	width: 85% !important;
+}
+
+.projects-content {
+	width: 100%;
+}

@@ -7,7 +7,14 @@ body {
 	font-family: var(--primary-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  	background-color: rgba(211, 211, 211, 0.258);
+  	background-color: rgba(243, 243, 243, 0.76);
+  	color: var(--primary-color);
+  	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme body {
+	background-color: rgba(0, 0, 0, 0.89);
+	color: var(--primary-color);
 }
 
 code {

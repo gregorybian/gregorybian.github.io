@@ -17,7 +17,7 @@ export default function ProjectsPage(){
                             <div className="title projects-page-title">
                                 {" built from "}
                                 <div className="highlight projects-page-highlight">
-                                {"Obsession"}
+                                {"Obsession!"}
                                 </div>
                             </div>
                             <div className="subtitle projects-page-small-title">...and a bit of boredom</div>

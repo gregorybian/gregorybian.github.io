@@ -45,8 +45,12 @@ export default function Homepage(){
                                     </div>
                                     <div className="highlight homepage-highlight-projects"> {"HIGHLIGHTS!."} </div>
                                 </div>
-                                <HighlightedProjects/>
+                                
                             </div>
+                            
+                        </div>
+                        <div className="homepage-projects-content">
+                                <HighlightedProjects/>
                         </div>
                     </div>
                 </div>

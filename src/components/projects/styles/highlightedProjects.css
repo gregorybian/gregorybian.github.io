@@ -9,11 +9,8 @@
 }
 
 .highlighted-projects-project {
-	padding: 10px;
-	overflow: hidden;
 	display: flex;
-	flex-direction: row;
-	width: 100%;
+	width: 100vw;
 }
 
 @media (max-width: 600px) {

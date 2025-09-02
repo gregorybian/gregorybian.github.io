@@ -18,7 +18,7 @@ export default function ExperiencePage(){
                         that fuel my 
                     </div>
                     <div className="highlight experience-page-highlight">
-                        Passion
+                        Passion!
                     </div>
                     <div className="subtitle experience-page-subtitle">
                         Here's a summary of my professional journey and key experiences

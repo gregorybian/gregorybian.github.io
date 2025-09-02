@@ -43,6 +43,11 @@
     align-items: flex-start;
 }
 
+.homepage-projects-content{
+    width: 100%;
+}
+
+
 .homepage-projects-header{
     display: inline;
 }

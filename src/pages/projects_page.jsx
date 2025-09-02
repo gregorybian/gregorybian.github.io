@@ -11,11 +11,20 @@ export default function ProjectsPage(){
                 <div className="content-wrapper">
                     <div className="projects-page-container">
                         <div className="projects-page-header">
-                            <div className="title projects-page-title">
-                                My Projects
+                            <div className="highlight projects-page-highlight">
+                                {"Projects"}
                             </div>
+                            <div className="title projects-page-title">
+                                {" built from "}
+                                <div className="highlight projects-page-highlight">
+                                {"Obsession"}
+                                </div>
+                            </div>
+                            <div className="subtitle projects-page-small-title">...and a bit of boredom</div>
+                            
+                            
                             <div className="subtitle projects-page-subtitle">
-                                Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience in my journey as a developer.
+                                Here are some of the projects I've worked on. Each one represents a unique challenge and learning experience in my journey as a software engineer.
                             </div>
                         </div>
                         <div className="projects-content">

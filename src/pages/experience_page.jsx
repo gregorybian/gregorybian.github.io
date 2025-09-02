@@ -11,8 +11,14 @@ export default function ExperiencePage(){
         <div className="content-wrapper">
             <div className="experience-page-container">
                 <div className="experience-page-header">
+                    <div className="highlight experience-page-highlight">
+                        Experiences 
+                    </div>
                     <div className="title experience-page-title">
-                        My Experience
+                        that fuel my 
+                    </div>
+                    <div className="highlight experience-page-highlight">
+                        Passion
                     </div>
                     <div className="subtitle experience-page-subtitle">
                         Here's a summary of my professional journey and key experiences

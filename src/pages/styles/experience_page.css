@@ -5,15 +5,21 @@
 }
 
 .experience-page-header{
-	display: flex;
+	display: inline;
 	flex-direction: column;
 	align-items: flex-start;
 	margin-bottom: 3rem;
+}
+.experience-page-highlight{
+	width: 85% !important;
+	display: inline;
+	padding-right: 20px;
 }
 
 .experience-page-title {
 	width: 85% !important;
     display: inline;
+	padding-right: 20px;
 }
 
 .experience-page-subtitle {

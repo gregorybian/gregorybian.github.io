@@ -9,6 +9,7 @@
 	padding-bottom: 30px;
 	margin-left: -35px;
 	margin-right: -35px;
+	gap: 30px;
 }
 
 .all-experiences-item {
@@ -32,9 +33,9 @@
 
 .experience-container {
 	padding: 2rem;
-	height: 210px;
 	display: flex;
 	flex-direction: column;
+	padding-top: 2.5rem;
 }
 
 /* Experience Header */

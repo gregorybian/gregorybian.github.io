@@ -2,11 +2,12 @@
 
 .image-container {
   position: relative;
-  display: inline-block; /* shrink-wraps around image */
+  display: inline; /* shrink-wraps around image */
 }
 
 .toolbox-image {
   display: block;
+  
   transition: transform 0.3s ease;
 }
 .toolbox-image:hover{

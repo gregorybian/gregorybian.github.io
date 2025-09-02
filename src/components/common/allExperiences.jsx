@@ -2,7 +2,7 @@ import React from "react";
 import Experience from "./experience";
 import INFO from "../../data/user";
 import "./styles/experience.css";
-
+import Logo from "./logo";
 const AllExperiences = () => {
 	return (
 		<div className="all-experiences-container">
@@ -15,9 +15,10 @@ const AllExperiences = () => {
 						location={experience.location}
 						duration={experience.duration}
 						description={experience.description}
-						technologies={experience.technologies}
+						technologies={experience.technologies.map((image) => <Logo key={image.key} src={image.url} text={image.name}/>)}
 					/>
 				</div>
+
 			))}
 		</div>
 	);

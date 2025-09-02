@@ -26,6 +26,7 @@ export default function Experience(props) {
 						</span>
 					))}
 				</div>
+
 			</div>
 		</div>
 	);

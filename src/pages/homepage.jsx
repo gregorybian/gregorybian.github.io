@@ -50,7 +50,7 @@ export default function Homepage(){
                             
                         </div>
                         <div className="homepage-projects-content">
-                                <HighlightedProjects/>
+                            <HighlightedProjects/>
                         </div>
                     </div>
                 </div>

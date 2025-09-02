@@ -7,7 +7,9 @@
 
 .toolbox-image {
   display: block;
-  
+  width: 40px;
+  height: 35px;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 .toolbox-image:hover{

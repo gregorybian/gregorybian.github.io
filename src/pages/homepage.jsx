@@ -5,7 +5,7 @@ import Footer from "../components/common/footer"
 import "./styles/Homepage.css"
 import "../components/projects/styles/allProjects.css"
 import "../components/projects/styles/project.css"
-import AllProjects from "../components/projects/allProjects"
+import HighlightedProjects from "../components/projects/highlightedProjects"
 import Icon from "../components/common/icon"
 
 export default function Homepage(){
@@ -45,7 +45,7 @@ export default function Homepage(){
                                     </div>
                                     <div className="highlight homepage-highlight-projects"> {"HIGHLIGHTS!."} </div>
                                 </div>
-                                <AllProjects/>
+                                <HighlightedProjects/>
                             </div>
                         </div>
                     </div>

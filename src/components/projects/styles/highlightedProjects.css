@@ -1,4 +1,4 @@
-.all-projects-container {
+.highlighted-projects-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -8,11 +8,12 @@
 	margin-right: -35px;
 }
 
-.all-projects-project {
-	width: calc(100% / 3);
-	box-sizing: border-box;
+.highlighted-projects-project {
 	padding: 10px;
 	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 }
 
 @media (max-width: 600px) {

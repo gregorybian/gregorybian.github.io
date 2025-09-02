@@ -1,5 +1,5 @@
 import React from "react";
-
+import Logo from "../common/logo";
 import "./styles/project.css";
 
 
@@ -17,14 +17,15 @@ export default function Project(props){
 		<React.Fragment>
 			<div className="project">
 				<div className="project-container">
-					<div className="project-logo">
-						{Image(logo)}
-						{Image(logo1)}
+					<div className="project-logo-container">
+						<div className="project-logo">
+							{logo.map((image) => <Logo key={image.key} src={image.url} text={image.name}/>)}
+						</div>
 					</div>
 					<div className="project-title">{title}</div>
 					<div className="project-description">{description}</div>
 					<div className="project-link">
-						<a src={link} className="project-link-text">{linkText}</a>
+						<a href={link} target="_blank" rel="noopener noreferrer" className="project-link-text">{linkText}</a>
 					</div>
 				</div>
 			</div>

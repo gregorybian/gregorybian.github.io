@@ -15,6 +15,7 @@ import Oscilloscope from "../components/images/Oscilloscope.png"
 import geeringup from "../components/images/geeringup.png"
 import ubc from "../components/images/ubc.png"
 import opencv from "../components/images/opencv.png"
+import finalreport from "../components/images/Final_Recommendation_Report.pdf"
 
 
 const INFO = {
@@ -121,32 +122,51 @@ const INFO = {
 	
 	projects: [
 		{
-			title: "This Portfolio",
+			title: "This Portfolio!",
 			description:
 				"This portfolio is built using React and Vite and is hosted on GitHub Pages. I aimed to build a simple, minimalistic portfolio that showcases my projects and experiences.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: [
+				{key: 1, name: "React", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"},
+				{key: 2, name: "JavaScript", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"},
+				{key: 3, name: "HTML", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"},
+				{key: 4, name: "CSS", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png"},
+				{key: 5, name: "Vite", url: "https://vite.dev/logo.svg"},
+				{key: 6, name: "GitHub Pages", url: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"},
+			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/gregorybian/gregorybian.github.io",
 		},
 
 		{
-			title: "Project 2",
+			title: "Real-Time Sports Betting Odds Tracker",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			logo1: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"Real-time sports betting odds tracking Python Script created to monitor changes in odds for various sports using the BeautifulSoup library, enabling better betting decisions.",
+			logo: [
+				{key: 1, name: "Python", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png"},
+				{key: 2, name: "HTML", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"},
+			],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/gregorybian/Sportsbetting_Webscraper",
 		},
 
 		{
-			title: "Project 3",
+			title: "Expense Tracker",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			logo1: null,
+				"Expense tracking application created in 2022 to monitor income and expenditures, enabling better financial management and budgeting.",
+			logo: [{key: 1, name: "Java", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png"}],
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/gregorybian/Expense_Tracker",
+		},
+		{
+			title: "Hand Hygiene Compliance System",
+			description:
+				"Prototype embedded system designed to monitor hand hygiene compliance in hospitals using a Raspberry Pi, infrared and ambient light sensors and LED indicators.",
+			logo: [
+				{key: 1, name: "Python", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png"},
+				{key: 2, name: "Raspberry Pi", url: RaspberryPi}
+			],
+			linkText: "View Project",
+			link: finalreport,
 		},
 	],
 };

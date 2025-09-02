@@ -1,9 +1,7 @@
 import React from "react";
-
 import Project from "./project";
-
 import INFO from "../../data/user";
-
+import Logo from "../common/logo";
 import "./styles/allProjects.css";
 
 const AllProjects = () => {
@@ -13,7 +11,6 @@ const AllProjects = () => {
 				<div className="all-projects-project" key={index}>
 					<Project
 						logo={project.logo}
-						logo1={project.logo1}
 						title={project.title}
 						description={project.description}
 						linkText={project.linkText}

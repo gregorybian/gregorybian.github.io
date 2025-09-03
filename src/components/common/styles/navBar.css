@@ -71,3 +71,49 @@
     color: var(--link-color);
 }
 
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 15px;
+    }
+    
+    .navbar {
+        max-width: 390px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    .navbar-links {
+        gap: 20px;
+    }
+    
+    .navbar-link,
+    .navbar-active {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 10px;
+    }
+    
+    .navbar {
+        max-width: 350px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        min-height: 35px;
+    }
+    
+    .navbar-links {
+        gap: 15px;
+    }
+    
+    .navbar-link,
+    .navbar-active {
+        font-size: 80%;
+    }
+}
+

@@ -67,3 +67,70 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 1024px) {
+    .homepage-firstpart {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .homepage-firstpartleft,
+    .homepage-firstpartright {
+        width: 100%;
+        max-width: 600px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .homepage-title,
+    .homepage-highlight,
+    .homepage-highlight-projects,
+    .homepage-subtitle {
+        width: 100% !important;
+        text-align: center;
+    }
+    
+    .homepage-highlight-projects {
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage-container {
+        padding-top: 80px;
+    }
+    
+    .homepage-firstpart {
+        gap: 30px;
+    }
+    
+    .homepage-highlight-projects {
+        font-size: 40px !important;
+    }
+    
+    .homepage-line {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-container {
+        padding-top: 70px;
+    }
+    
+    .homepage-firstpart {
+        gap: 25px;
+    }
+    
+    .homepage-highlight-projects {
+        font-size: 35px !important;
+    }
+    
+    .homepage-line {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}

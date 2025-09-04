@@ -122,6 +122,18 @@ const INFO = {
 	
 	projects: [
 		{
+			title: "Mini-Sudoku Solver",
+			description:
+				"A mini-sudoku solver that uses OpenCV and Pytesseract Python Libraries to extract and solve sudoku puzzles from images of Linkedln Mini-Sudoku puzzles, achieving a top time everyday.",
+			logo: [
+				{key: 1, name: "Python", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png"},
+				{key: 2, name: "OpenCV", url: opencv},
+				{key: 3, name: "Numpy", url: numpy}
+			],
+			linkText: "View Project",
+			link: "https://github.com/gregorybian/Mini-Sudoku-Solver",
+		},
+		{
 			title: "This Portfolio!",
 			description:
 				"This portfolio is built using React and Vite and is hosted on GitHub Pages. I aimed to build a simple, minimalistic portfolio that showcases my projects and experiences.",

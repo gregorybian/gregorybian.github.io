@@ -49,7 +49,7 @@ export default function Homepage(){
                             </div>
                             
                         </div>
-                        <div className="homepage-projects-content">
+                        <div className="projects-content">
                             <HighlightedProjects/>
                         </div>
                     </div>

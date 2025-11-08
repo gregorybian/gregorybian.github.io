@@ -1,7 +1,5 @@
 import numpy from "../components/images/NumPy.png"
 import nodejs from "../components/images/NodeJS.png"
-import nextjs from "../components/images/NextJS.png"
-import tailwind from "../components/images/Tailwind.png"
 import matplotlib from "../components/images/Matplotlib.png"
 import pandas from "../components/images/pandas.png"
 import excel from "../components/images/Excel.png"
@@ -16,8 +14,13 @@ import geeringup from "../components/images/geeringup.png"
 import ubc from "../components/images/ubc.png"
 import opencv from "../components/images/opencv.png"
 import finalreport from "../components/images/Final_Recommendation_Report.pdf"
+import stm32 from "../components/images/STM32.png"
 
+// Project Images
+import opencv_code from "./projectimages/MiniSudoku_Image.png"
 
+// Project Videos
+import miniSudokuSolverVideo from "./projectimages/MiniSudoku_Video.mp4"
 const INFO = {
 	main: {
 		title: "Reactfolio by Gregory",
@@ -35,25 +38,30 @@ const INFO = {
 		title: "Hey There! I'm",
 		highlight: "Gregory Bian!",
 		description:
-			"I am a second year Computer Engineering Student at UBC. My current area of passion is in Data Analysis and Machine Learning. However, I have a diverse skill set as shown in my digital toolbox and am always looking for new challenges and opportunities to grow as a developer.",
+			"I am a second-year Computer Engineering Student at UBC. My current area of passion is in firmware and embedded systems. However, I have a diverse skill set as shown in my digital toolbox and am always looking for new challenges and opportunities to grow as a developer.",
 		description2: 
-			"Outside of academics, I enjoy playing sports. Whether that be working out, competing in ultimate frisbee, or playing hockey, I welcome competition and pushing myself to improve. You can find some of my favorite projects and my contact details below."
+			"Outside of academics, I enjoy playing sports. Whether that be working out, competing in ultimate frisbee, or playing hockey, I welcome competition and pushing myself to improve. You can find some of my favorite projects and my contact details below!"
 	},
 
-	webdev:[
-		{key: 1, name: "HTML", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png"},
-		{key: 2, name: "CSS", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.png"},	
-		{key: 3, name: "JavaScript", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.png"},
-		{key: 4, name: "Typescript", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png"},		
-		{key: 5, name: "React", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"},
-		{key: 6, name: "Node.js", url: nodejs},
-		{key: 7, name: "Next.js", url: nextjs},
-		{key: 8, name: "Tailwind CSS", url: tailwind}
-	],
+	
 
+	
+	firmware:[
+		{key: 1, name: "C", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"},
+		{key: 2, name: "STM32", url: stm32},
+		{key: 1, name: "Arduino", url: Arduino},
+		{key: 2, name: "Raspberry Pi", url: RaspberryPi},
+	],
+	hardware:[
+		{key: 1, name: "Oscilloscope", url: Oscilloscope},
+		{key: 2, name: "Circuit Design", url: CircuitDesign},
+		{key: 3, name: "Soldering", url: Soldering},
+		{}
+		
+
+	],
 	data:[
 		{key: 1, name: "Java", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png"},
-		{key: 2, name: "C", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"},
 		{key: 3, name: "Python", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png"},
 		{key: 4, name: "Numpy", url: numpy},
 		{key: 5, name: "Matplotlib", url: matplotlib},
@@ -61,16 +69,16 @@ const INFO = {
 		{key: 7, name: "Excel", url: excel},
 		{key: 8, name: "Matlab", url: matlab},
 	],
-
-	hardware:[
-		{key: 1, name: "Arduino", url: Arduino},
-		{key: 2, name: "Raspberry Pi", url: RaspberryPi},
-		{key: 3, name: "Circuit Design", url: CircuitDesign},
-		{key: 4, name: "Soldering", url: Soldering},
-		{key: 5, name: "AutoCAD", url: AutoCAD},
-		{key: 6, name: "Oscilloscope", url: Oscilloscope},
-
+	webdev:[
+		{key: 1, name: "HTML", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png"},
+		{key: 2, name: "CSS", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.png"},	
+		{key: 3, name: "JavaScript", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/javascript/javascript.png"},
+		{key: 4, name: "Typescript", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript.png"},		
+		{key: 5, name: "React", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png"},
+		{key: 6, name: "Node.js", url: nodejs},
 	],
+
+	
 
 	experiences: [
 		{
@@ -122,6 +130,7 @@ const INFO = {
 	
 	projects: [
 		{
+			slug: "mini-sudoku-solver",
 			title: "Mini-Sudoku Solver",
 			description:
 				"A mini-sudoku solver that uses OpenCV and Pytesseract Python Libraries to extract and solve sudoku puzzles from images of Linkedln Mini-Sudoku puzzles, achieving a top time everyday.",
@@ -132,8 +141,11 @@ const INFO = {
 			],
 			linkText: "View Project",
 			link: "https://github.com/gregorybian/Mini-Sudoku-Solver",
+			image: opencv_code,
+			video: miniSudokuSolverVideo
 		},
 		{
+			slug: "portfolio-site",
 			title: "This Portfolio!",
 			description:
 				"This portfolio is built using React and Vite and is hosted on GitHub Pages. I aimed to build a simple, minimalistic portfolio that showcases my projects and experiences.",
@@ -150,6 +162,7 @@ const INFO = {
 		},
 
 		{
+			slug: "odds-tracker",
 			title: "Real-Time Sports Betting Odds Tracker",
 			description:
 				"Real-time sports betting odds tracking Python Script created to monitor changes in odds for various sports using the BeautifulSoup library, enabling better betting decisions.",
@@ -162,6 +175,7 @@ const INFO = {
 		},
 
 		{
+			slug: "expense-tracker",
 			title: "Expense Tracker",
 			description:
 				"Expense tracking application created in 2022 to monitor income and expenditures, enabling better financial management and budgeting.",
@@ -170,6 +184,7 @@ const INFO = {
 			link: "https://github.com/gregorybian/Expense_Tracker",
 		},
 		{
+			slug: "hand-hygiene-compliance",
 			title: "Hand Hygiene Compliance System",
 			description:
 				"Prototype embedded system designed to monitor hand hygiene compliance in hospitals using a Raspberry Pi, infrared and ambient light sensors and LED indicators.",

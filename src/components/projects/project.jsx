@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../common/logo";
 import "./styles/project.css";
 
 
 export default function Project(props){
-	const { logo, logo1, title, description, linkText, link } = props;
+	const { logo, title, description, linkText, slug } = props;
 	
 	function Image(src){
 		if(!src){
@@ -16,18 +17,20 @@ export default function Project(props){
 	return (
 		<React.Fragment>
 			<div className="project">
-				<div className="project-container">
-					<div className="project-logo-container">
-						<div className="project-logo">
-							{logo.map((image) => <Logo key={image.key} src={image.url} text={image.name}/>)}
+				<Link to={`/projects/${slug}`} className="project-link-wrapper">
+					<div className="project-container">
+						<div className="project-logo-container">
+							<div className="project-logo">
+								{logo.map((image) => <Logo key={image.key} src={image.url} text={image.name}/>)}
+							</div>
+						</div>
+						<div className="project-title">{title}</div>
+						<div className="project-description">{description}</div>
+						<div className="project-link">
+							<span className="project-link-text">{linkText}</span>
 						</div>
 					</div>
-					<div className="project-title">{title}</div>
-					<div className="project-description">{description}</div>
-					<div className="project-link">
-						<a href={link} target="_blank" rel="noopener noreferrer" className="project-link-text">{linkText}</a>
-					</div>
-				</div>
+				</Link>
 			</div>
 		</React.Fragment>
 	);

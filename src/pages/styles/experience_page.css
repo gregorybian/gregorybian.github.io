@@ -26,4 +26,46 @@
 	width: 85% !important;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+	.experience-page-container {
+		padding-top: 80px;
+	}
+
+	.experience-page-header {
+		margin-bottom: 2rem;
+	}
+
+	.experience-page-highlight {
+		width: 100% !important;
+		display: block;
+		padding-right: 0;
+	}
+
+	.experience-page-title {
+		width: 100% !important;
+		display: block;
+		padding-right: 0;
+	}
+
+	.experience-page-subtitle {
+		width: 100% !important;
+	}
+
+	.experience-content {
+		width: 100%;
+		overflow-x: hidden;
+	}
+}
+
+@media (max-width: 480px) {
+	.experience-page-container {
+		padding-top: 70px;
+	}
+
+	.experience-page-header {
+		margin-bottom: 1.5rem;
+	}
+}
+
 

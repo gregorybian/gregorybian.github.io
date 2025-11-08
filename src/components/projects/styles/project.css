@@ -7,6 +7,14 @@
 	height: 100%;
 }
 
+.project-link-wrapper {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+}
+
 .project a {
 	text-decoration: none;
 }

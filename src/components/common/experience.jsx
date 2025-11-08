@@ -20,11 +20,7 @@ export default function Experience(props) {
 				</div>
 				<div className="experience-description">{description}</div>
 				<div className="experience-technologies">
-					{technologies.map((tech, index) => (
-						<span key={index} className="experience-tech-tag">
-							{tech}
-						</span>
-					))}
+					{technologies}
 				</div>
 
 			</div>

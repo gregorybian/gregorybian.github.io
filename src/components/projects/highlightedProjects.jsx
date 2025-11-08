@@ -1,35 +1,25 @@
 import React from "react";
 import Project from "./project";
 import INFO from "../../data/user";
-import Logo from "../common/logo";
 import "./styles/highlightedProjects.css";
 
 const HighlightedProjects = () => {
+	// Get the first 3 projects as highlighted projects
+	const highlightedProjects = INFO.projects.slice(0, 3);
+	
 	return (
-		<div className="highlighted-projects-container">
-			<div className="highlighted-projects-project">
-				<Project
-					logo={INFO.projects[0].logo}
-					title={INFO.projects[0].title}
-					description={INFO.projects[0].description}
-					linkText={INFO.projects[0].linkText}
-					link={INFO.projects[0].link}
-				/>
-				<Project
-					logo={INFO.projects[1].logo}
-					title={INFO.projects[1].title}
-					description={INFO.projects[1].description}
-					linkText={INFO.projects[1].linkText}
-					link={INFO.projects[1].link}
-				/>
-				<Project
-					logo={INFO.projects[2].logo}
-					title={INFO.projects[2].title}
-					description={INFO.projects[2].description}
-					linkText={INFO.projects[2].linkText}
-					link={INFO.projects[2].link}
-				/>
-			</div>
+		<div className="all-projects-container">
+			{highlightedProjects.map((project, index) => (
+				<div className="all-projects-project" key={index}>
+					<Project
+						logo={project.logo}
+						title={project.title}
+						description={project.description}
+						linkText={project.linkText}
+						slug={project.slug}
+					/>
+				</div>
+			))}
 		</div>
 	);
 };

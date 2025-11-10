@@ -11,7 +11,7 @@ export default function ThemeToggle() {
             setIsDark(true);
             document.documentElement.classList.add('dark-theme');
         }
-    }, []);
+    }, []); 
 
     const toggleTheme = () => {
         const newTheme = !isDark;

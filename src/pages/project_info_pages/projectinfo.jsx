@@ -4,6 +4,10 @@ import PortfolioSite from "./PortfolioSite";
 import OddsTracker from "./OddsTracker";
 import ExpenseTracker from "./ExpenseTracker";
 import HandHygieneCompliance from "./HandHygieneCompliance";
+import PhysicsIA from "./PhysicsIA";
+import ChemIA from "./ChemIA.jsx"
+import MathIA from "./MathIA.jsx"
+import DRD_Firmware from "./DRD_Firmware.jsx";
 import INFO from "../../data/user";
 
 
@@ -22,6 +26,10 @@ export default function ProjectInfo(){
 		"odds-tracker": OddsTracker,
 		"expense-tracker": ExpenseTracker,
 		"hand-hygiene-compliance": HandHygieneCompliance,
+		"physics-ia": PhysicsIA,
+		"chem-ia": ChemIA,
+		"math-ia": MathIA,
+		"drd-firmware": DRD_Firmware
 	};
 
 	const ProjectComponent = projectComponents[slug];

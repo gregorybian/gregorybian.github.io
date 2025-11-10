@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import INFO from "../../data/user";
 import "./styles/experience.css";
 
 export default function Experience(props) {
-	const { logo, title, company, location, duration, description, technologies } = props;
+	const { logo, title, company, location, duration, description, technologies, projects } = props;
 	
 	return (
 		<div className="experience">
@@ -22,6 +24,25 @@ export default function Experience(props) {
 				<div className="experience-technologies">
 					{technologies}
 				</div>
+				{projects && projects.length > 0 && (
+					<div className="experience-projects">
+						<div className="experience-projects-label">View projects:</div>
+						<div className="experience-projects-buttons">
+							{projects.map((projectSlug) => {
+								const project = INFO.projects.find((p) => p.slug === projectSlug);
+								return (
+									<Link 
+										key={projectSlug} 
+										to={`/projects/${projectSlug}`}
+										className="experience-project-button"
+									>
+										{project ? project.title : projectSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+									</Link>
+								);
+							})}
+						</div>
+					</div>
+				)}
 
 			</div>
 		</div>

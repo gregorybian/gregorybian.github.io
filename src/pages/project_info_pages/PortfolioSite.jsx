@@ -24,12 +24,17 @@ export default function PortfolioSite(){
 						</div>
 						<div className="project-info-header">
 							<div className="project-info-badge">{"Project Spotlight"}</div>
-							<h1 className="project-info-title">{project.title}</h1>
-							<p className="project-info-description">LinkedIn posts a daily Sudoku puzzle. Unlike typical Sudoku puzzles featuring a 9x9 grid, LinkedIn shortened the puzzle to a 6x6 version to make it quicker to complete. As someone who is very competitive, I wrote this script to flex my top 1% score to all my friends. When LinkedIn displays my friends’ scores as 3+ minutes and mine as 30 seconds, I feel a sense pride knowing my computer engineering knowledge has not gone to waste.</p>
+							<div className="project-info-title-wrapper">
+								<h1 className="project-info-title">{project.title}</h1>
+								<a href={project.link} target="_blank" rel="noopener noreferrer" className="project-info-cta">View Source Code</a>
 							</div>
-
-
+							<p className="project-info-description">This portfolio is built using React with the Vite framework. It is hosted on GitHub Pages. I spent a lot of time customizing the design to be presentable and showcase my work, albeit some things can definitely be reworked (mobile optimized lol). Anyways, feel free to look through and click through this portfolio and check out all the features!</p>
 						</div>
+						<div className="project-info-body">
+							<img src={project.image} alt="project image" style={{height: "26em"}} className="project-info-image" />
+							<img src={project.image2} alt="project image" style={{height: "26em"}} className="project-info-image" />
+						</div>
+					</div>
 				</div>
 				<Footer />
 			</div>

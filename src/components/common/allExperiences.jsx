@@ -16,6 +16,7 @@ const AllExperiences = () => {
 						duration={experience.duration}
 						description={experience.description}
 						technologies={experience.technologies.map((image) => <Logo key={image.key} src={image.url} text={image.name}/>)}
+						projects={experience.projects}
 					/>
 				</div>
 

@@ -1,26 +1,47 @@
-import numpy from "../components/images/NumPy.png"
-import nodejs from "../components/images/NodeJS.png"
+// Firmware
+import Arduino from "../components/images/Arduino.png"
+import stm32 from "../components/images/STM32.png"
+import RaspberryPi from "../components/images/RaspberryPi.png"
+import FreeRTOS from "../components/images/FreeRTOS.png"
+import CAN from "../components/images/CAN.png"
+
+// Hardware
+import SystemVerilog from "../components/images/system_verilog.png"
+import FPGA from "../components/images/FPGA.png"
+import CircuitDesign from "../components/images/Circuitry.png"
+import Soldering from "../components/images/Soldering.png"
+import Oscilloscope from "../components/images/Oscilloscope.png"
+
+// Data
 import matplotlib from "../components/images/Matplotlib.png"
 import pandas from "../components/images/pandas.png"
 import excel from "../components/images/Excel.png"
 import matlab from "../components/images/matlab.png"
-import Arduino from "../components/images/Arduino.png"
-import RaspberryPi from "../components/images/RaspberryPi.png"
-import CircuitDesign from "../components/images/Circuitry.png"
-import Soldering from "../components/images/Soldering.png"
-import AutoCAD from "../components/images/AutoCAD.png"
-import Oscilloscope from "../components/images/Oscilloscope.png"
+import numpy from "../components/images/NumPy.png"
+import opencv from "../components/images/opencv.png"
+
+// Webdev
+import nodejs from "../components/images/NodeJS.png"
+
+// PDFs
+import finalreport from "../components/images/Final_Recommendation_Report.pdf"
+import physicsia from "../components/images/physics_ia.pdf"
+import chemia from "../components/images/Chem_IA.pdf"
+import mathia from "../components/images/Math_IA.pdf"
+
+// Experience Images
+import ubcsolar from "../components/images/ubcsolarlogo.jpg"
 import geeringup from "../components/images/geeringup.png"
 import ubc from "../components/images/ubc.png"
-import opencv from "../components/images/opencv.png"
-import finalreport from "../components/images/Final_Recommendation_Report.pdf"
-import stm32 from "../components/images/STM32.png"
 
 // Project Images
 import opencv_code from "./projectimages/MiniSudoku_Image.png"
+import react_meme from "./projectimages/React-meme.jpg"
+import react_meme2 from "./projectimages/React-meme2.jpg"
 
 // Project Videos
 import miniSudokuSolverVideo from "./projectimages/MiniSudoku_Video.mp4"
+
 const INFO = {
 	main: {
 		title: "Reactfolio by Gregory",
@@ -43,22 +64,20 @@ const INFO = {
 			"Outside of academics, I enjoy playing sports. Whether that be working out, competing in ultimate frisbee, or playing hockey, I welcome competition and pushing myself to improve. You can find some of my favorite projects and my contact details below!"
 	},
 
-	
-
-	
 	firmware:[
 		{key: 1, name: "C", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"},
 		{key: 2, name: "STM32", url: stm32},
-		{key: 1, name: "Arduino", url: Arduino},
-		{key: 2, name: "Raspberry Pi", url: RaspberryPi},
+		{key: 3, name: "Arduino", url: Arduino},
+		{key: 4, name: "Raspberry Pi", url: RaspberryPi},
+		{key: 5, name: "FreeRTOS", url: FreeRTOS},
+		{key: 6, name: "CAN", url: CAN},
 	],
 	hardware:[
-		{key: 1, name: "Oscilloscope", url: Oscilloscope},
-		{key: 2, name: "Circuit Design", url: CircuitDesign},
-		{key: 3, name: "Soldering", url: Soldering},
-		{}
-		
-
+		{key: 1, name: "System Verilog", url: SystemVerilog},
+		{key: 2, name: "FPGA", url: FPGA},
+		{key: 3, name: "Oscilloscope", url: Oscilloscope},
+		{key: 4, name: "Circuit Design", url: CircuitDesign},
+		{key: 5, name: "Soldering", url: Soldering},
 	],
 	data:[
 		{key: 1, name: "Java", url:"https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/java/java.png"},
@@ -68,6 +87,7 @@ const INFO = {
 		{key: 6, name: "Pandas", url: pandas},
 		{key: 7, name: "Excel", url: excel},
 		{key: 8, name: "Matlab", url: matlab},
+		{key: 9, name: "OpenCV", url: opencv}
 	],
 	webdev:[
 		{key: 1, name: "HTML", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png"},
@@ -81,6 +101,22 @@ const INFO = {
 	
 
 	experiences: [
+		{
+			title: "Embedded Firmware Developer",
+			company: "UBC Solar",
+			location: "Vancouver, BC",
+			duration: "Sept 2025 - Present",
+			description: "Developing firmware for UBC Solar's 4th-generation car, Cascadia, using a Hardware Abstraction Layer (HAL) in embedded C on STM32 microcontrollers and communicating over a Controlled Area Network (CAN) bus communication protocol.",
+			technologies: [
+				{key: 1, name: "STM32", url: stm32},
+				{key: 2, name: "C", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"},
+				{key: 3, name: "CAN", url: CAN},
+				{key: 4, name: "FreeRTOS", url: FreeRTOS},
+				{key: 5, name: "Circuit Design", url: CircuitDesign},
+			],
+			projects: ["drd-firmware"],
+			logo: ubcsolar
+		},
 		{
 			title: "STEM Outreach Facilitator",
 			company: "University of British Columbia",
@@ -145,6 +181,22 @@ const INFO = {
 			video: miniSudokuSolverVideo
 		},
 		{
+			slug: "drd-firmware",
+			title: "UBC Solar Driver Dashboard",
+			description:
+				"Firmware developed in C for the driver dashboard of UBC Solar's 4th generation car, Cascadia focused on improving driver awareness at competition.",
+			logo: [
+				{key: 1, name: "STM32", url: stm32},
+				{key: 2, name: "C", url: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"},
+				{key: 3, name: "CAN", url: CAN},
+				{key: 4, name: "FreeRTOS", url: FreeRTOS},
+				{key: 5, name: "Circuit Design", url: CircuitDesign},
+			],
+			linkText: "View Project",
+			link: "https://github.com/UBC-Solar/firmware_v3/tree/redesign_layout/components/drd/Core/Src",
+			image: opencv_code
+		},
+		{
 			slug: "portfolio-site",
 			title: "This Portfolio!",
 			description:
@@ -159,6 +211,8 @@ const INFO = {
 			],
 			linkText: "View Project",
 			link: "https://github.com/gregorybian/gregorybian.github.io",
+			image: react_meme,
+			image2: react_meme2
 		},
 
 		{
@@ -194,6 +248,39 @@ const INFO = {
 			],
 			linkText: "View Project",
 			link: finalreport,
+		},
+		{
+			slug: "physics-ia",
+			title: "Temperature Effect on Spring Constant Research Paper",
+			description:
+				"Physics Research Paper on the effect of Temperature on the spring constant of a spring with a focus on accurate data collection and processing and reasonable results.",
+			logo: [
+
+			],
+			linkText: "View Project",
+			link: physicsia
+		},
+		{
+			slug: "math-ia",
+			title: "Mathematical Exploration of Temperature within a Thermoflask Research Paper",
+			description:
+				"Mathematical Research Paper on Temperature as a function of time within a thermoflask. Used heat-transfer equations and Calculus to explore water heating up in my thermoflask",
+			logo: [
+
+			],
+			linkText: "View Project",
+			link: mathia
+		},
+		{
+			slug: "chem-ia",
+			title: "Temperature Effect on Rate of Reaction Research Paper",
+			description:
+				"Chemistry Research Paper on the dependance of temperature on the rate of reaction of calcium carbonate and hydrochloric acid in a eudiometer setup.",
+			logo: [
+
+			],
+			linkText: "View Project",
+			link: chemia
 		},
 	],
 };

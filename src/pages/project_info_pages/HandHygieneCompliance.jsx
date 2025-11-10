@@ -24,19 +24,24 @@ export default function HandHygieneCompliance(){
 						</div>
 						<div className="project-info-header">
 							<div className="project-info-badge">{"Project Spotlight"}</div>
-							<h1 className="project-info-title">{project.title}</h1>
-							<p className="project-info-description">{project.description}</p>
-						</div>
-						<div className="project-info-body">
-							{project.image && (
-								<img src={project.image} alt="project image" className="project-info-image" />
-							)}
-							<div className="project-info-logos">
-								{project.logo?.map((image) => (
-									<Logo key={image.key} src={image.url} text={image.name} />
-								))}
+							<div className="project-info-title-wrapper">
+								<h1 className="project-info-title">{project.title}</h1>
+								{project.link && (
+									<a href={project.link} target="_blank" rel="noopener noreferrer" className="project-info-cta">View Report</a>
+								)}
 							</div>
+							<p className="project-info-description">This project helped me apply the engineering design process. The entire process is detailed in the report below and has helped my understand what it is like to take on projects and work within a team.</p>
 						</div>
+						{project.link && (
+							<div className="project-info-body" style={{ marginTop: "40px" }}>
+								<iframe 
+									src={project.link} 
+									className="project-info-image" 
+									style={{ height: "800px", width: "100%", border: "none" }}
+									title="Hand Hygiene Compliance Report"
+								/>
+							</div>
+						)}
 					</div>
 				</div>
 				<Footer />

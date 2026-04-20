@@ -2,7 +2,7 @@
 import Arduino from "../components/images/Arduino.png"
 import stm32 from "../components/images/STM32.png"
 import RaspberryPi from "../components/images/RaspberryPi.png"
-import FreeRTOS from "../components/images/FreeRTOS.png"
+import FreeRTOS from "../components/images/Freertos.png"
 import CAN from "../components/images/CAN.png"
 
 // Hardware
@@ -16,7 +16,7 @@ import Oscilloscope from "../components/images/Oscilloscope.png"
 import matplotlib from "../components/images/Matplotlib.png"
 import pandas from "../components/images/pandas.png"
 import excel from "../components/images/Excel.png"
-import matlab from "../components/images/matlab.png"
+import matlab from "../components/images/Matlab.png"
 import numpy from "../components/images/NumPy.png"
 import opencv from "../components/images/opencv.png"
 
@@ -31,7 +31,7 @@ import mathia from "../components/images/Math_IA.pdf"
 
 // Experience Images
 import ubcsolar from "../components/images/ubcsolarlogo.jpg"
-import geeringup from "../components/images/geeringup.png"
+import geeringup from "../components/images/GeeringUp.png"
 import ubc from "../components/images/ubc.png"
 
 // Project Images

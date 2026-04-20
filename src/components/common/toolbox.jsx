@@ -1,7 +1,7 @@
 import "./styles/toolbox.css"
 import Logo from "./logo.jsx"
 import INFO from "../../data/user"
-import toolbox from "../images/toolbox.png"
+import toolbox from "../images/Toolbox.png"
 
 export default function Toolbox(){
     return(
